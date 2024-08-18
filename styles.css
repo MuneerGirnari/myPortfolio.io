@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    overflow-y: auto;
+}
+
+/* header section */
+.head-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.head-cont .name span{
+    color: #a1857c;
+}
+
+.head-cont .name{
+    padding: 0.8em 0.5em;
+    border-right: 2px solid #000;
+    cursor: pointer;
+}
+
+.head-cont .resume{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.8em 0.5em;
+}
+
+.resume .fa-download{
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+ .head-cont .name:hover, .resume .fa-download:hover{
+    color: #a1857c;
+}
+
+
+/* main section */
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    background-color: whitesmoke;
+}
+
+main .right-container{
+    background-image: url(/assets/image.JPG);
+    background-size: cover;
+    background-position: 100% 0%;
+    width: 40%;
+    min-height: 100vh;
+    border-left: 2px solid #000;
+}
+
+main .left-container{
+    width: 60%;
+    min-height: 100vh;
+}
+
+/* subsections */
+.intro, .education, .experience{
+    border-bottom: 1px solid #000;
+    padding: 1.7rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+/*main section - intro section*/
+.intro .info{
+    padding-bottom: 1.3rem;
+}
+
+.intro .info p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.intro .info span{
+    color: #a1857c;
+}
+
+.intro .skills {
+    font-size: 1.2rem;
+    display: flex;
+    gap:1em;
+    font-weight: 500;
+    padding-bottom: 1.3rem;
+}
+
+.intro .skills .skill-items{
+    min-width: 7em;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0.5em 1em;
+    border-radius: 40px;
+}
+
+.intro .skills .skill-items:hover{
+    cursor: pointer;
+    background-color: #a1857c;
+    border-color: whitesmoke;
+    transition: all 0.5s;
+    color: whitesmoke;
+}
+
+.intro .desc .para{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/*main section - education section*/
+.education .degrees{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1em 2em 0 2em;
+    line-height: 1.7em;
+}
+
+/*main section - experience section*/
+.experience .exper-cont{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1em 2em 0 2em;
+    line-height: 1.7em;
+}
+
+/*main section - social media section*/
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em 1em 1.7em;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 0.8em;
+    font-size: 1.7em;
+}
+
+.items .fa-github:hover, .items .fa-instagram:hover, .items .fa-envelope:hover, .items .fa-facebook:hover{
+    cursor: pointer;
+    color: #a1857c;
+    transition: all 0.8s;
+}
+
+/* media queries */
+@media screen and (min-width:320px) and (max-width:600px) {
+
+    .head-cont .name{
+        border: none;
+    }
+
+    .head-cont .resume p{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    main .right-container{
+        border-left: none;
+    }
+
+    main .left-container, main .right-container{
+        width: 100%;
+    }
+    .intro, .education, .experience{
+        padding: 0.7rem;
+    }
+
+    .intro .skills .skill-items{
+        font-size: 16px;
+        min-width: 5em;
+        padding: 0.5em 1em;
+    }
+
+    .socials{
+        padding: 1em 0.7em;
+    }
+
+    .icons{
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width:830px){
+    .intro .skills .skill-items{
+        font-size: 16px;
+        min-width: 5em;
+    }
+}
+
+
