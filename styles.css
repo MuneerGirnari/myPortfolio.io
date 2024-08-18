@@ -58,7 +58,7 @@ main{
 }
 
 main .right-container{
-    background-image: url(/assets/image.JPG);
+    background-image: url(./assets/image.JPG);
     background-size: cover;
     background-position: 100% 0%;
     width: 40%;
