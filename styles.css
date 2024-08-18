@@ -58,7 +58,7 @@ main{
 }
 
 main .right-container{
-    background-image: url(./assets/image.jpg);
+    background-image: url(./assets/image.JPG);
     background-size: cover;
     background-position: 100% 0%;
     width: 40%;
@@ -143,7 +143,7 @@ main .left-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em 1em 1.7em;
+    padding: 1.6em 2em 1em 1.7em;
 }
 
 .icons{
